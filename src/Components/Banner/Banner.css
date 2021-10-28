@@ -1,0 +1,35 @@
+.banner{
+    height: 100vh;
+    background: url('../../banner.jpg') no-repeat center center/cover ;
+    color: white;
+    position: relative;
+}
+
+.banner-text{
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 30%;
+    z-index: 2;
+}
+
+.banner h1{
+    color: yellow;
+    font-size: 60px;
+}
+
+.banner p{
+    font-size: 28px;
+}
+
+.banner::after{
+    content: '';
+    position: absolute;
+    top: 80;
+    left: 0;
+    width: 100%;
+    height: calc(100%);
+    z-index: 1;
+    background-color: rgba(0,0,0, 0.6);
+}

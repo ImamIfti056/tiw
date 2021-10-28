@@ -1,0 +1,35 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    height: 80px;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.navbar .logo{
+    color: yellow;
+    margin-bottom: 8px;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a{
+    font-weight: bolder;
+    color: white;
+    padding: 0 10px;
+    margin: 0 5px;
+    font-size: 24px;
+}
+
+.navbar a:hover{
+    color: yellow;
+}

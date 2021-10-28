@@ -1,0 +1,20 @@
+.overview{
+    background-color: #36a9da;
+    color: white;
+    padding: 60px 0;
+}
+
+.overview .flex{
+    justify-content: space-between;
+}
+
+.overview .container div{
+    text-align: center;
+}
+
+.overview h2{
+    font-size: 48px;
+}
+.overview p{
+    font-size: 24px;
+}
