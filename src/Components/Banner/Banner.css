@@ -1,5 +1,5 @@
 .banner{
-    height: 100vh;
+    height: calc(100vh - 80px);
     background: url('../../banner.jpg') no-repeat center center/cover ;
     color: white;
     position: relative;

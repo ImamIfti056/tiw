@@ -1,12 +1,8 @@
 .navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    height: 80px;
     color: white;
     height: 80px;
-    background-color: transparent;
-    z-index: 3;
+    background-color: rgb(110, 110, 189) ;
 }
 
 .navbar .logo{
