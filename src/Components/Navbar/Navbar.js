@@ -15,12 +15,14 @@ const Navbar = () => {
                     <ul>
                         <li><Link to='/home'>Home</Link></li>
                         <li><Link to='/about'>About</Link></li>
-                        <li><Link to='/myorders'>My Orders</Link></li>
+                        {user?.email &&
+                            <li><Link to='/myorders'>My Bookings</Link></li>
+                        }
                         {user?.email &&
                             <li>{user.displayName}</li>
                         }
                         {!user?.email && 
-                            <li><Link to='/login'>Login</Link></li>
+                            <li><Link to='/login'>Sign in</Link></li>
                         }
                         {user?.email &&
                             <li><button onClick={logOut}>Sign Out</button></li>

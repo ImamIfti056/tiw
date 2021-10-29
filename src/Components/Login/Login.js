@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Login.css';
 import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
@@ -22,9 +23,9 @@ const Login = () => {
     }
 
     return (
-        <div className='login flex'>
-            <h3>this is login</h3>
-            <button onClick={handleGoogleLogin}>Google Sign in</button>
+        <div className='login'>
+            <h1 className='title'>Sign in</h1>
+            <button className='btn btn-signIn' onClick={handleGoogleLogin}><i class="fab fa-google"></i>oogle Sign in</button>
             {/* <button onClick={signInUsingGithub}>Github Sign in</button> */}
         </div>
     );

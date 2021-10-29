@@ -4,6 +4,7 @@ import './Overview.css';
 const Overview = () => {
     return (
         <div className='overview'>
+            <h1 className='title'>Why choose us?</h1>
             <div className="container flex">
                 <div>
                     <h2>856</h2>
