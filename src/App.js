@@ -8,6 +8,7 @@ import Login from './Components/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import MyOrders from './Components/MyOrders/MyOrders';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import PackageDetails from './Components/PackageDetails/PackageDetails';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <PrivateRoute path='/myorders'>
               <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path='/package/:id'>
+              <PackageDetails></PackageDetails>
             </PrivateRoute>
             <Route path='*'>
               <Notfound></Notfound>

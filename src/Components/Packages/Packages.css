@@ -1,0 +1,14 @@
+.packages{
+    background-color: #eee;
+}
+
+.title{
+    color: tomato;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.packages .grid{
+    grid-template-columns: repeat(3, 1fr);
+}

@@ -10,23 +10,23 @@ const Footer = () => {
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br /> Natus,  perferendis quam, doloremque eligendi vitae illo?</p>
                     <h2>Follow Us</h2>
                     <p>
-                        <span><i class="fab fa-facebook"></i></span>
-                        <span><i class="fab fa-instagram"></i></span>
-                        <span><i class="fab fa-twitter"></i></span>
+                        <span><i className="fab fa-facebook"></i></span>
+                        <span><i className="fab fa-instagram"></i></span>
+                        <span><i className="fab fa-twitter"></i></span>
                     </p>
                 </div>
                 <div className='contact'>
                     <h2>Contact Us</h2>
                     <div className='flex'>
-                        <i class="fas fa-phone"></i>
+                        <i className="fas fa-phone"></i>
                         <p>+01852-1265122 <br />+01852-1265122</p>
                     </div>
                     <div className='flex'>
-                        <i class="far fa-paper-plane"></i>
+                        <i className="far fa-paper-plane"></i>
                         <p>info@example.com <br />support@example.com</p>
                     </div>
                     <div className='flex'>
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i className="fas fa-map-marker-alt"></i>
                         <p>2752 Willison Street <br /> Eagan, United State</p>
                     </div>
                 </div>
@@ -40,11 +40,11 @@ const Footer = () => {
                 </div>
                 <div className='payments'>
                     <h2>We Accept</h2>
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
+                    <i className="fab fa-cc-visa"></i>
+                    <i className="fab fa-cc-mastercard"></i>
                     <br />
-                    <i class="fab fa-cc-discover"></i>
-                    <i class="fab fa-cc-stripe"></i>
+                    <i className="fab fa-cc-discover"></i>
+                    <i className="fab fa-cc-stripe"></i>
                 </div>
             </div>
             <hr />

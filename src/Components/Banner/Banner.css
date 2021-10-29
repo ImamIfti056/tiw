@@ -1,6 +1,7 @@
 .banner{
     height: calc(100vh - 80px);
-    background: url('../../banner.jpg') no-repeat center center/cover ;
+    /* background: url('../../banner.jpg') no-repeat fixed center center/cover ; */
+    background-color: black;
     color: white;
     position: relative;
 }

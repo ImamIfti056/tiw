@@ -50,4 +50,23 @@ img{
   height: 100%;
 }
 
+.grid{
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn{
+  cursor: pointer;
+  border: none;
+  padding: 8px 20px;
+  margin: 10px 0;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
+
 /* My styles ends here */

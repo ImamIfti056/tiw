@@ -1,0 +1,76 @@
+.package-details{
+    background-color: #eee;
+    padding: 60px 0;
+}
+
+.package-details .container{
+    max-width: 1200px;
+}
+
+.package-details .grid{
+    align-items: flex-start;
+    grid-template-columns: 3fr 2fr;
+}
+.package-details .flex{
+    justify-content: space-between;
+}
+.package-details .details{
+    margin-right: 20px;
+}
+
+.package-details img{
+    margin-bottom: 15px;
+    height: 350px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.package-details .details i{
+    color: tomato;
+}
+
+.package-details .details p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.package-details .details h2{
+    font-size: 32px;
+    color: tomato;
+}
+
+/* ----------FORM-------------------- */
+.form{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: tomato;
+}
+
+.package-details .form input, .package-details .form select, .package-details .form textarea {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.package-details .form input[type='submit']{
+    background-color: #304f47;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+}
+.package-details .form input[type='submit']:hover{
+    background-color: tomato;
+}
