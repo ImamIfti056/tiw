@@ -28,18 +28,19 @@
     margin: 0 10px;
     border-radius: 30px;
     padding: 10px 6px;
-    border: 1px solid black;
+    border: 1px solid #555;
     box-shadow: 1px 10px 10px rgba(0,0,0,0.3);
-}
-
-.review .flex .card:hover{
-    background-color: tomato;
-    color: white;    
 }
 
 .review .flex .card:nth-child(odd){
     height: 450px;
     width: 350px;
+}
+
+.review .flex .card:nth-child(2){
+    background-color: tomato;
+    color: white;
+    border: none;
 }
 
 .review .card p{

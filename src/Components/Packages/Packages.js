@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Package from '../Package/Package';
 import './Packages.css';
 
@@ -23,7 +24,10 @@ const Packages = () => {
                     package={pack}
                     ></Package>)
                 }
-            </div>
+                </div>
+                <div className='add-tour'>
+                    <Link to='/addpackage'><button className="btn btn-addTour"><i className="fas fa-plus"></i> Add New Tour</button></Link>
+                </div>
             </div>
         </div>
     );

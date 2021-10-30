@@ -10,6 +10,7 @@ import AllBookings from './Components/AllBookings/AllBookings';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import PackageDetails from './Components/PackageDetails/PackageDetails';
+import AddPackage from './Components/AddPackage/AddPackage';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <PrivateRoute path='/mybookings'>
               <MyBookings></MyBookings>
+            </PrivateRoute>
+            <PrivateRoute path='/addpackage'>
+              <AddPackage></AddPackage>
             </PrivateRoute>
             <PrivateRoute path='/allbookings'>
               <AllBookings></AllBookings>

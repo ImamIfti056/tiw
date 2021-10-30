@@ -4,7 +4,7 @@ import './Package.css';
 
 const Package = (props) => {
 
-    const {id, name, img, totalRatings, description, price} = props.package;
+    const {_id, name, img, totalRatings, description, price} = props.package;
 
     return (
         <div className='package'>
@@ -15,8 +15,8 @@ const Package = (props) => {
                 <h2><i className="fas fa-map-marker-alt"></i> {name}</h2>
                 <h4>{totalRatings} Ratings</h4>
                 <h3>$ {price}/Per Person</h3>
-                <p>{description.slice(0,80)}...</p>
-                <Link to={`/package/${id}`}><button className="btn btn-package">Book Now!</button></Link>
+                <p>{description?.slice(0,80)}...</p>
+                <Link to={`/package/${_id}`}><button className="btn btn-package">Book Now!</button></Link>
             </div>
         </div>
     );

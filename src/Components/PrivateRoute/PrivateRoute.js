@@ -9,7 +9,7 @@ const PrivateRoute = ({children, ...rest}) => {
     if(isLoading){
         return(
             <div className="flex" style={{'fontSize': '24px', 'fontWeight': '700', 'padding': '20px', 'margin': '30px 0'}}>
-                <span>Loading...</span>
+                <span>Loading...<i className="fas fa-spinner"></i></span>
             </div>
         )
     }
