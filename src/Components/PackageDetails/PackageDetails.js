@@ -17,7 +17,7 @@ const PackageDetails = () => {
     const [packages, setPackages] = useState([]);
 
     useEffect(()=> {
-        fetch('http://localhost:9000/packages')
+        fetch('https://arcane-sierra-20746.herokuapp.com/packages')
         .then(res=> res.json())
         .then(data => setPackages(data))
     },[packages])
@@ -34,7 +34,7 @@ const PackageDetails = () => {
 
         const newTraveller = {name, email, phone, ticket, date, message, packageName: pack?.name };
         
-        fetch('http://localhost:9000/traveller', {
+        fetch('https://arcane-sierra-20746.herokuapp.com/traveller', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

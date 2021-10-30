@@ -8,7 +8,7 @@ const Bookings = (props) => {
     const handleDeleteTrip = (id) => {
         const proceed = window.confirm('Are you sure to cancel the trip?');
         if(proceed){
-            const url = `http://localhost:9000/allbookings/${id}`;
+            const url = `https://arcane-sierra-20746.herokuapp.com/allbookings/${id}`;
             fetch(url,{
                 method: 'DELETE'
             })

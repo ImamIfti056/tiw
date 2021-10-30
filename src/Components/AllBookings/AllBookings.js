@@ -7,7 +7,7 @@ const AllBookings = () => {
     const [error, setError] = useState('');
 
     useEffect(() => {
-        fetch('http://localhost:9000/allbookings')
+        fetch('https://arcane-sierra-20746.herokuapp.com/allbookings')
         .then(res => res.json())
         .then(data => setAllBookings(data))
         .catch(error => setError(error.message))
