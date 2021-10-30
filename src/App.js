@@ -5,8 +5,9 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Notfound from './Components/NotFound/Notfound';
 import Login from './Components/Login/Login';
+import MyBookings from './Components/MyBookings/Mybookings';
+import AllBookings from './Components/AllBookings/AllBookings';
 import AuthProvider from './context/AuthProvider';
-import MyOrders from './Components/MyOrders/MyOrders';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import PackageDetails from './Components/PackageDetails/PackageDetails';
 
@@ -26,8 +27,11 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
-            <PrivateRoute path='/myorders'>
-              <MyOrders></MyOrders>
+            <PrivateRoute path='/mybookings'>
+              <MyBookings></MyBookings>
+            </PrivateRoute>
+            <PrivateRoute path='/allbookings'>
+              <AllBookings></AllBookings>
             </PrivateRoute>
             <PrivateRoute path='/package/:id'>
               <PackageDetails></PackageDetails>

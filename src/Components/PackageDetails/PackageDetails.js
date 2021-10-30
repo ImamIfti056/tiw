@@ -1,19 +1,56 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './PackageDetails.css';
+import useAuth from '../../hooks/useAuth';
 import { useParams } from 'react-router';
 
 const PackageDetails = () => {
     const {id} = useParams();
+    const {user} = useAuth();
+
+    const nameRef = useRef();
+    const emailRef = useRef();
+    const phoneRef = useRef();
+    const dateRef = useRef();
+    const messageRef = useRef();
+    const ticketRef = useRef();
 
     const [packages, setPackages] = useState([]);
 
     useEffect(()=> {
-        fetch('/mydb.json')
+        fetch('http://localhost:9000/packages')
         .then(res=> res.json())
         .then(data => setPackages(data))
     },[packages])
 
     let pack = packages.find(pack => pack.id == id);
+
+    const handleSubmit = e => {
+        const name = nameRef.current.value;
+        const email = emailRef.current.value;
+        const phone = phoneRef.current.value;
+        const ticket = ticketRef.current.value;
+        const message = messageRef.current.value;
+        const date = dateRef.current.value;
+
+        const newTraveller = {name, email, phone, ticket, date, message, packageName: pack?.name };
+        
+        fetch('http://localhost:9000/traveller', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newTraveller)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.insertedId){
+                alert('Package Booked!');
+                e.target.reset();
+            }
+        })
+
+        e.preventDefault();
+    }
 
     return (
         <div className='package-details'>
@@ -35,31 +72,28 @@ const PackageDetails = () => {
                     </div>
                     <div className="form">
                         <h1>Book this Package</h1>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div>
-                                <input type="text" placeholder='Full Name' />
+                                <input type="text" placeholder={`Type your Name (${user.displayName})`} ref={nameRef} required />
                             </div>
                             <div>
-                                <input type="email" placeholder='Email' />
+                                <input type="email" placeholder={`Type your Name (${user.email})`} ref={emailRef} required />
                             </div>
                             <div>
-                                <input type="number" placeholder='Phone' />
+                                <input type="number" placeholder='Phone' ref={phoneRef} required />
                             </div>
                             <div>
-                                <select>
+                                <select ref={ticketRef} required>
                                     <option selected>Ticket Type</option>
                                     <option>Travel by Plane</option>
                                     <option>Travel by Bus</option>
                                 </select>
                             </div>
-                             <div>
-                                <input type="number" placeholder='Passangers' />
+                            <div>
+                                <input type="date" ref={dateRef} required />
                             </div>
                             <div>
-                                <input type="date" />
-                            </div>
-                            <div>
-                                <textarea rows="10" placeholder='Any Messages...'></textarea>
+                                <textarea rows="10" placeholder='Any Messages...' ref={messageRef} ></textarea>
                             </div>
                             <div>
                                 <input type="submit" value='Submit' />

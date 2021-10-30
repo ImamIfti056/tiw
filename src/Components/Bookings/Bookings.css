@@ -1,0 +1,37 @@
+.booking{
+    background-color: rgb(241, 214, 181);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.booking:hover{
+    transform: scale(1.03);
+}
+
+.booking .flex{
+    justify-content: space-between;
+}
+
+.booking .flex .flex2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.booking .flex h2{
+    margin-right: 30px;
+}
+
+.booking h1 span{
+    color:mediumblue;
+}
+
+.booking button{
+    color: red;
+    font-size: 30px;
+}
+.booking button:hover{
+    transform: scale(1.2);
+}

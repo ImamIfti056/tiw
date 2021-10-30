@@ -16,7 +16,10 @@ const Navbar = () => {
                         <li><Link to='/home'>Home</Link></li>
                         <li><Link to='/about'>About</Link></li>
                         {user?.email &&
-                            <li><Link to='/myorders'>My Bookings</Link></li>
+                            <li><Link to='/mybookings'>My Bookings</Link></li>
+                        }
+                        {user?.email &&
+                            <li><Link to='/allbookings'>All Bookings</Link></li>
                         }
                         {user?.email &&
                             <li>{user.displayName}</li>

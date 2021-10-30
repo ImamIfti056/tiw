@@ -7,7 +7,7 @@ const Packages = () => {
     const [packages, setPackages] = useState([]);
 
     useEffect(()=> {
-        fetch('./mydb.json')
+        fetch('http://localhost:9000/packages')
         .then(res => res.json())
         .then(data => setPackages(data))
     },[])
