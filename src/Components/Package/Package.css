@@ -6,7 +6,6 @@
 }
 
 .package-img{
-    height: 250px;
     overflow: hidden;
 }
 
@@ -52,4 +51,31 @@
 .btn-package{
     background-color: tomato;
     color: white;
+}
+
+/* ------MOBILE------- */
+@media (max-width: 500px){
+    .package{
+        width: 80%;
+        margin: 15px auto;
+    }
+    .package-img img{
+        height: 200px;
+        width: 100%;
+    }
+    .package-text{
+        padding: 10px 20px;
+    }    
+    .package-text h2{
+        margin: 10px 0;
+    }
+    .package-text h3{
+        font-size: 18px;
+    }
+    .package-text p{
+        margin: 10px 0;
+    }
+    .btn-package{
+        width: 100%;
+    }
 }

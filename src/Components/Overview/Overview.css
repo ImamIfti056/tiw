@@ -25,3 +25,10 @@
 .overview p{
     font-size: 24px;
 }
+
+/* ---MOBILE------- */
+@media (max-width: 500px){
+    .overview .flex{
+        flex-direction: column;
+    }
+}

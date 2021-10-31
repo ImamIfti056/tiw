@@ -74,3 +74,45 @@
 .package-details .form input[type='submit']:hover{
     background-color: tomato;
 }
+
+/* ----MOBILE------- */
+@media (max-width: 500px){
+    .package-details .grid{
+        align-items: center;
+        grid-template-columns: 1fr;
+    }
+    .package-details img{
+        margin-bottom: 15px;
+        height: 350px;
+        width: 100%;
+        border-radius: 5%;
+    }
+    .package-details .flex{
+        display: block;
+    }
+    .package-details .flex h2{
+        font-size: 24px;
+    }
+    .package-details .details p{
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .package-details .form{
+        width: 80%;
+        margin: 30px auto;
+        padding-left: 20px;
+    }
+    .form h1{
+        font-size: 30px;
+    }
+    .package-details .form input, .package-details .form select, .package-details .form textarea {
+        width: 90%;
+        height: 40px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        font-size: 16px;
+    }
+}

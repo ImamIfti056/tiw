@@ -33,3 +33,19 @@
     z-index: 1;
     background-color: rgba(0,0,0, 0.6);
 }
+
+/* Mobile */
+@media (max-width: 500px){
+    .banner{
+        height: calc(100vh - 140px);
+    }
+    .banner h1{
+        font-size: 36px;
+    }
+    .banner p{
+        font-size: 20px;
+    }
+    .banner-text{
+        top: 20%;
+    }
+}

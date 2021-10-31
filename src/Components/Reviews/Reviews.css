@@ -67,3 +67,30 @@
     margin: 4px 0;
     color: #bbb;
 }
+
+/* -------MOBILE-------- */
+@media (max-width: 500px){
+    .review .title{
+        font-size: 30px;
+    }
+    .review .flex{
+        flex-direction: column;
+    }
+    .review .flex .card{
+        margin: 10px 0;
+        height: 340px;
+    }
+    .review .flex .card:nth-child(odd){
+        height: 380px;
+        width: 350px;
+    }
+    .review .card-img img{
+        height: 100px;
+        width: 100px;
+    }
+    .review .card p{
+        margin: 10px 4px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

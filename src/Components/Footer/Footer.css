@@ -57,3 +57,13 @@
 .footer .copyright span{
     color: tomato;
 }
+
+/* MOBILE */
+@media(max-width: 500px){
+    .footer .flex{
+        flex-direction:column-reverse;
+    }
+    .footer .contact .flex{
+        flex-direction: row;
+    }
+}

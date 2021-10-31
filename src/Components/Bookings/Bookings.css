@@ -35,3 +35,20 @@
 .booking button:hover{
     transform: scale(1.2);
 }
+
+/* Mobile */
+@media(max-width: 500px){
+    .booking h1{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .booking h2{
+        font-size: 20px;
+    }
+    .booking h3{
+        font-size: 16px;
+    }
+    .booking button{
+        font-size: 20px;
+    }
+}

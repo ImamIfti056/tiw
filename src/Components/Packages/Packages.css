@@ -22,3 +22,14 @@
     background-color: tomato;
     color: white;
 }
+
+/* Mobile */
+@media (max-width: 500px){
+    .packages .grid{
+        grid-template-columns: 1fr;
+    }
+    .packages .btn-addTour{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+}
