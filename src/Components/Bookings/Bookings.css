@@ -43,16 +43,27 @@
 /* Mobile */
 @media(max-width: 500px){
     .booking h1{
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 10px;
     }
     .booking h2{
-        font-size: 20px;
-    }
-    .booking h3{
         font-size: 16px;
     }
+    .booking h3{
+        display: none;
+    }
     .booking button{
-        font-size: 20px;
+        font-size: 12px;
+        padding: 10px;
+        
+    }
+    .booking .flex h2{
+        margin-top: 10px;
+    }
+    .booking .flex h2 button{
+        font-size: 12px;
+        padding: 8px 10px;
+        background-color: tomato;
+        color: white;    
     }
 }

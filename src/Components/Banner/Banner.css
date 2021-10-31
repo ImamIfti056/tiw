@@ -37,7 +37,7 @@
 /* Mobile */
 @media (max-width: 500px){
     .banner{
-        height: calc(100vh - 140px);
+        height: calc(100vh - 150px);
     }
     .banner h1{
         font-size: 36px;

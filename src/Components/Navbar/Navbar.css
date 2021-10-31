@@ -48,7 +48,7 @@
 /* ------------------Mobile---------------  */
 @media(max-width: 500px){
     .navbar{
-        height: 140px;
+        height: 150px;
     }
     .navbar .flex{
         flex-direction: column;
@@ -57,7 +57,7 @@
         padding-bottom: 20px; 
     }
     .navbar a, .navbar li{
-        font-size: 14px;
+        font-size: 15px;
         padding: 0;
     }
     .navbar button{
