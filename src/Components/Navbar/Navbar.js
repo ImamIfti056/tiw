@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className="container flex">
-                <h1 className='logo'>Travel Agency</h1>
+                <h1 className='logo'>T I W</h1>
                 <nav>
                     <ul>
                         <li><Link to='/home'>Home</Link></li>

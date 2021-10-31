@@ -1,0 +1,18 @@
+.about{
+    margin: 20px 0;
+}
+.about .grid{
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+.about-text{
+    margin-left: 20px;
+    font-size: 26px;
+}
+
+/* mobile */
+@media (max-width: 500px){
+    .about .grid{
+        grid-template-columns: 1fr;
+    }
+}

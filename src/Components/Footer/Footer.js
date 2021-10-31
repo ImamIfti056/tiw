@@ -6,7 +6,7 @@ const Footer = () => {
         <div className='footer'>
             <div className="container flex">
                 <div className='follow'>
-                    <h1>Travel Agency</h1>
+                    <h1>Trecking into the Wild</h1>
                     <p>We ensure your best experience of travelling and safety <br /> at the most possible cost.</p>
                     <h2>Follow Us</h2>
                     <p>
