@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container flex">
                 <div className='follow'>
                     <h1>Travel Agency</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br /> Natus,  perferendis quam, doloremque eligendi vitae illo?</p>
+                    <p>We ensure your best experience of travelling and safety <br /> at the most possible cost.</p>
                     <h2>Follow Us</h2>
                     <p>
                         <span><i className="fab fa-facebook"></i></span>

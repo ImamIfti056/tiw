@@ -22,13 +22,13 @@ const Navbar = () => {
                             <li><Link to='/allbookings'>All Bookings</Link></li>
                         }
                         {user?.email &&
-                            <li>{user.displayName}</li>
+                            <li>User: <span className='user-name'>{user.displayName}</span></li>
                         }
                         {!user?.email && 
                             <li><Link to='/login'>Sign in</Link></li>
                         }
                         {user?.email &&
-                            <li><button onClick={logOut}>Sign Out</button></li>
+                            <li><button onClick={logOut}>Sign Out <i className="fas fa-sign-out-alt"></i></button></li>
                         }
                     </ul>
                 </nav>

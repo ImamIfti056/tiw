@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useParams } from 'react';
+import React, { useEffect, useState } from 'react';
 import useAuth from '../../hooks/useAuth';
 import Bookings from '../Bookings/Bookings';
 

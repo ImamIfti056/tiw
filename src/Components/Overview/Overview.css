@@ -1,5 +1,6 @@
 .overview{
-    background-color: #36a9da;
+    /* background-color: #36a9da; */
+    background: url('../../overview.jpg') no-repeat fixed center center/cover;
     color: white;
     padding: 60px 0;
 }

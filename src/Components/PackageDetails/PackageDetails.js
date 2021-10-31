@@ -8,7 +8,7 @@ const PackageDetails = () => {
     const {user} = useAuth();
 
     const nameRef = useRef();
-    const emailRef = useRef();
+    // const emailRef = useRef();
     const phoneRef = useRef();
     const dateRef = useRef();
     const messageRef = useRef();
@@ -22,17 +22,17 @@ const PackageDetails = () => {
         .then(data => setPackages(data))
     },[packages])
 
-    let pack = packages.find(pack => pack._id == id);
+    let pack = packages.find(pack => pack._id === id);
 
     const handleSubmit = e => {
         const name = nameRef.current.value;
-        const email = emailRef.current.value;
+        // const email = emailRef.current.value;
         const phone = phoneRef.current.value;
         const ticket = ticketRef.current.value;
         const message = messageRef.current.value;
         const date = dateRef.current.value;
 
-        const newTraveller = {name, email, phone, ticket, date, message, packageName: pack?.name };
+        const newTraveller = {name, email: user?.email, phone, ticket, date, message, packageName: pack?.name };
 
         fetch( 'https://arcane-sierra-20746.herokuapp.com/traveller', {
             method: 'POST',
@@ -76,9 +76,9 @@ const PackageDetails = () => {
                             <div>
                                 <input type="text" placeholder={`Type your Name (${user.displayName})`} ref={nameRef} required />
                             </div>
-                            <div>
+                            {/* <div>
                                 <input type="email" placeholder={user.email} ref={emailRef} required />
-                            </div>
+                            </div> */}
                             <div>
                                 <input type="number" placeholder='Phone' ref={phoneRef} required />
                             </div>

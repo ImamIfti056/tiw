@@ -18,14 +18,29 @@
     display: flex;
 }
 
-.navbar a{
-    font-weight: bolder;
+.navbar .user-name{
+    color: yellow;
+}
+
+.navbar a, .navbar li{
     color: white;
-    padding: 0 10px;
+    padding: 0 5px;
     margin: 0 5px;
     font-size: 24px;
 }
 
 .navbar a:hover{
     color: yellow;
+}
+
+.navbar button{
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    height: 90%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: tomato;
+    color: white;
 }

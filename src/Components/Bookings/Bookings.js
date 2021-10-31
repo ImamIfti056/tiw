@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Bookings.css';
 
 const Bookings = (props) => {
@@ -15,8 +15,8 @@ const Bookings = (props) => {
             .then(res => res.json())
             .then(data => {
                 if(data.deletedCount){
-                alert('Trip Deleted Successfully');
-                window.location.reload();
+                    alert('Trip Deleted Successfully');
+                    window.location.reload();
                 }
             })
         }
