@@ -4,6 +4,7 @@ import './Package.css';
 
 const Package = (props) => {
 
+    console.log(props.package);
     const {_id, name, img, totalRatings, description, price} = props.package;
 
     return (

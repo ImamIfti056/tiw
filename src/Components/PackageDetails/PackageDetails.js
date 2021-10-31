@@ -32,7 +32,7 @@ const PackageDetails = () => {
         const message = messageRef.current.value;
         const date = dateRef.current.value;
 
-        const newTraveller = {name, email: user?.email, phone, ticket, date, message, packageName: pack?.name };
+        const newTraveller = {name, email: user?.email, phone, ticket, date, message, packageName: pack?.name, status: 'Pending' };
 
         fetch( 'https://arcane-sierra-20746.herokuapp.com/traveller', {
             method: 'POST',
@@ -44,7 +44,7 @@ const PackageDetails = () => {
         .then(res => res.json())
         .then(data => {
             if(data.insertedId){
-                alert('Package Booked!');
+                alert('Booking has been submitted and waiting for approval.');
                 e.target.reset();
             }
         })

@@ -32,8 +32,12 @@
     color: red;
     font-size: 30px;
 }
-.booking button:hover{
-    transform: scale(1.2);
+
+.booking .flex h2 button{
+    font-size: 16px;
+    padding: 8px 14px;
+    background-color: tomato;
+    color: white;    
 }
 
 /* Mobile */
