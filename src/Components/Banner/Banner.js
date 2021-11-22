@@ -6,7 +6,7 @@ const Banner = () => {
         <div className='banner'>
             <div className='banner-text'>
                 <h1>Where your journey begins</h1>
-                <p>A journey of 1000 miles starts with a single step.</p>
+                <p>A journey of 1000 miles starts with a single step</p>
             </div>
         </div>
     );
